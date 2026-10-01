@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ========== SEO: título y descripción que aparecen en Google ========== -->
+<title>DuctiTech | Reparación de consolas, computadoras y celulares en Pachuca</title>
+<meta name="description" content="DuctiTech: más de 6 años reparando consolas (Xbox, PlayStation, Nintendo), laptops, PC, celulares y tabletas en Pachuca de Soto. Microsoldadura, diagnóstico transparente y garantía. Rastrea tu equipo en línea.">
+<meta name="theme-color" content="#f4f7ff">
+<!-- Cambia esta URL por el dominio real cuando se publique -->
+<link rel="canonical" href="https://ductitech.com/">
+
+<!-- ========== Vista previa al compartir en WhatsApp / Facebook ========== -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="DuctiTech">
+<meta property="og:title" content="DuctiTech · Reparación de electrónicos en Pachuca">
+<meta property="og:description" content="Consolas, cómputo, celulares y microsoldadura. Más de 6 años de experiencia, diagnóstico transparente y garantía.">
+<meta property="og:image" content="img/og-ductitech.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ========== Ícono de la pestaña ========== -->
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<!-- ========== Tipos de letra ==========
+     Bricolage Grotesque → títulos
+     Figtree             → textos                                     -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="preload" as="image" href="img/logo.webp">
+
+<!-- ========== Datos del negocio para Google (no se ven en la página) ========== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "DuctiTech",
+  "slogan": "Tecnología adaptable",
+  "description": "Taller especializado en reparación de consolas, computadoras, laptops, celulares y tabletas, con más de 6 años de experiencia en Pachuca de Soto, Hidalgo.",
+  "image": "img/og-ductitech.jpg",
+  "logo": "img/logo.png",
+  "telephone": "+527721646924",
+  "email": "contactodroidusty@gmail.com",
+  "address": {"@type": "PostalAddress","streetAddress": "Jardín Colón No. 8, Col. Centro","addressLocality": "Pachuca de Soto","addressRegion": "Hidalgo","addressCountry": "MX"},
+  "sameAs": ["https://www.facebook.com/DuctiTech/","https://www.instagram.com/ducti_tech","https://www.tiktok.com/@ducti.tech"],
+  "priceRange": "$500 - $800 MXN"
+}
+</script>
+
+<!-- Estilos: todo el diseño está en css/estilos.css -->
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<!-- Íconos (vienen de js/iconos.js; no hay que tocarlo) -->
+<script src="js/iconos.js"></script>
+<a class="skip-link" href="#inicio">Saltar al contenido</a>
+
+<!-- ====================================================================
+     SECCIÓN: MENÚ (parte de arriba)
+     Cada enlace lleva a una sección: href="#precios" lleva a la
+     sección que tiene id="precios". Si agregas uno, agrégalo también
+     en el menú del celular, que está justo abajo.
+     ==================================================================== -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="#inicio" class="brand" aria-label="DuctiTech, ir al inicio">
+      <img src="img/logo.webp" alt="" width="44" height="44">
+      <span class="brand-name"><b>DUCTI<span>TECH</span></b><small>Tecnología adaptable</small></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#proceso">Proceso</a></li>
+        <li><a href="#seguimiento">Seguimiento</a></li>
+        <li><a href="#opiniones">Opiniones</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a href="#seguimiento" class="btn btn-primary btn-sm header-cta"><svg class="icon"><use href="#i-scan-search"/></svg><span class="txt">Rastrear equipo</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu"><svg class="icon"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- SECCIÓN: MENÚ DEL CELULAR (se abre con el botón de tres rayas) -->
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menú">
+  <div class="mobile-menu-top">
+    <a href="#inicio" class="brand" data-close><img src="img/logo.webp" alt="" width="38" height="38"><span class="brand-name"><b>DUCTI<span>TECH</span></b></span></a>
+    <button class="menu-btn" style="display:inline-flex" id="menuClose" aria-label="Cerrar menú"><svg class="icon"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Móvil">
+    <a href="#servicios" data-close style="transition-delay:.03s">Servicios <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    <a href="#precios" data-close style="transition-delay:.06s">Precios <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    <a href="#proceso" data-close style="transition-delay:.09s">Proceso <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    <a href="#seguimiento" data-close style="transition-delay:.12s">Seguimiento <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    <a href="#opiniones" data-close style="transition-delay:.15s">Opiniones <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    <a href="#nosotros" data-close style="transition-delay:.18s">Nosotros <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+    <a href="#contacto" data-close style="transition-delay:.21s">Contacto <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+  </nav>
+  <div class="mobile-menu-actions">
+    <a class="btn btn-wa" data-wa="Hola DuctiTech, quiero cotizar una reparación." href="https://wa.me/5217721646924" target="_blank" rel="noopener"><svg class="icon"><use href="#b-whatsapp"/></svg> Cotizar por WhatsApp</a>
+    <a class="btn" href="tel:+527721646924"><svg class="icon"><use href="#i-phone"/></svg> Llamar 772 164 6924</a>
+  </div>
+</div>
+
+<main>
+<!-- ====================================================================
+     SECCIÓN: PORTADA (lo primero que se ve)
+     · El título grande es el <h1>. Cada <span class="line"> es un renglón.
+     · En los botones, data-wa="..." es el mensaje que aparece escrito
+       al abrir WhatsApp. Puedes cambiar ese texto.
+     · A la derecha está el dibujo del chip (no hace falta tocarlo).
+     ==================================================================== -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <h1><span class="line">Reparamos</span><span class="line">tu equipo</span><span class="line">como nuevo.</span></h1>
+      <p class="hero-lead">Consolas, laptops, PC, celulares y tabletas, incluso a nivel de placa con microsoldadura. Te explicamos la falla y el costo antes de empezar, y sigues tu reparación en línea.</p>
+      <div class="hero-actions">
+        <a class="btn btn-wa" data-wa="Hola DuctiTech, quiero cotizar una reparación." href="https://wa.me/5217721646924" target="_blank" rel="noopener"><svg class="icon"><use href="#b-whatsapp"/></svg> Cotizar por WhatsApp</a>
+        <a class="btn" href="#seguimiento"><svg class="icon"><use href="#i-scan-search"/></svg> Rastrear mi equipo</a>
+      </div>
+      <div class="hero-meta">
+        <span><svg class="icon"><use href="#i-shield-check"/></svg> Garantía en todo</span>
+        <span><svg class="icon"><use href="#i-clock"/></svg> Diagnóstico en 24–48 h</span>
+        <span><svg class="icon"><use href="#i-map-pin"/></svg> Centro de Pachuca</span>
+      </div>
+    </div>
+
+    <!-- Dibujo del chip con el logo -->
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 560 520">
+        <defs>
+          <linearGradient id="gStroke" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#13b2fb"/><stop offset="1" stop-color="#342bf9"/></linearGradient>
+          <radialGradient id="gGlow"><stop offset="0" stop-color="#13b2fb" stop-opacity=".28"/><stop offset="1" stop-color="#13b2fb" stop-opacity="0"/></radialGradient>
+        </defs>
+        <circle class="chip-glow" cx="330" cy="260" r="200" fill="url(#gGlow)"/>
+        <!-- Pistas del circuito -->
+        <g>
+          <path class="trace" d="M14 110 H90 L130 150 H170 L220 200 H240"/>
+          <path class="trace" d="M0 230 H130 L160 230 H240"/>
+          <path class="trace" d="M40 290 H100 L130 260 H240"/>
+          <path class="trace" d="M0 350 H110 L150 290 H240"/>
+          <path class="trace" d="M24 440 H100 L150 390 H200 L220 320 H240"/>
+          <path class="trace" d="M420 210 H470 L500 180 H556"/>
+          <path class="trace" d="M420 260 H540"/>
+          <path class="trace" d="M420 310 H460 L500 350 V450"/>
+          <path class="trace" d="M290 170 V110 L320 80 V20"/>
+          <path class="trace" d="M370 170 V120 H460 L500 80"/>
+          <path class="trace" d="M300 350 V430 L270 460 V508"/>
+          <path class="trace" d="M380 350 V400 H470"/>
+        </g>
+        <!-- Luces que se mueven (si las quieres quitar, borra este grupo) -->
+        <g>
+          <path class="pulse" pathLength="100" d="M14 110 H90 L130 150 H170 L220 200 H240"/>
+          <path class="pulse v" pathLength="100" style="animation-delay:-1.1s" d="M0 230 H130 L160 230 H240"/>
+          <path class="pulse" pathLength="100" style="animation-delay:-2.3s" d="M0 350 H110 L150 290 H240"/>
+          <path class="pulse v" pathLength="100" style="animation-delay:-.6s;animation-duration:4.4s" d="M24 440 H100 L150 390 H200 L220 320 H240"/>
+          <path class="pulse" pathLength="100" style="animation-delay:-1.8s;animation-duration:4s" d="M540 260 H420"/>
+          <path class="pulse v" pathLength="100" style="animation-delay:-3s" d="M320 20 V80 L290 110 V170"/>
+          <path class="pulse" pathLength="100" style="animation-delay:-.2s;animation-duration:4.8s" d="M500 450 V350 L460 310 H420"/>
+          <path class="pulse v" pathLength="100" style="animation-delay:-2.7s" d="M270 508 V460 L300 430 V350"/>
+        </g>
+        <!-- Terminales (círculos en las puntas) -->
+        <g>
+          <circle class="pad" cx="14" cy="110" r="6"/><circle class="pad" cx="40" cy="290" r="6"/><circle class="pad" cx="24" cy="440" r="6"/>
+          <circle class="pad" cx="556" cy="180" r="6"/><circle class="pad" cx="540" cy="260" r="6"/><circle class="pad" cx="500" cy="450" r="6"/>
+          <circle class="pad" cx="320" cy="20" r="6"/><circle class="pad" cx="500" cy="80" r="6"/><circle class="pad" cx="270" cy="508" r="6"/><circle class="pad" cx="470" cy="400" r="6"/>
+        </g>
+        <!-- Pines del chip -->
+        <g fill="#0b1736">
+          <rect x="230" y="196" width="12" height="8" rx="2"/><rect x="230" y="226" width="12" height="8" rx="2"/><rect x="230" y="256" width="12" height="8" rx="2"/><rect x="230" y="286" width="12" height="8" rx="2"/><rect x="230" y="316" width="12" height="8" rx="2"/>
+          <rect x="418" y="206" width="12" height="8" rx="2"/><rect x="418" y="256" width="12" height="8" rx="2"/><rect x="418" y="306" width="12" height="8" rx="2"/>
+          <rect x="286" y="160" width="8" height="12" rx="2"/><rect x="366" y="160" width="8" height="12" rx="2"/>
+          <rect x="296" y="348" width="8" height="12" rx="2"/><rect x="376" y="348" width="8" height="12" rx="2"/>
+        </g>
+        <!-- Cuerpo del chip con el logo -->
+        <rect x="247" y="177" width="180" height="180" rx="30" fill="#0b1736"/>
+        <rect x="240" y="170" width="180" height="180" rx="30" fill="#ffffff" stroke="#0b1736" stroke-width="3"/>
+        <rect x="254" y="184" width="152" height="152" rx="20" fill="none" stroke="#c9d4ee" stroke-dasharray="4 6"/>
+        <image href="img/logo.webp" x="266" y="196" width="128" height="128"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: FRANJA ANIMADA (amarilla, con las marcas)
+     Cambia las palabras en las DOS listas y déjalas iguales;
+     la segunda copia sirve para que el movimiento no se corte.
+     ==================================================================== -->
+<div class="ticker-wrap"><div class="ticker" aria-label="Marcas y equipos que reparamos">
+  <div class="ticker-track">
+    <ul><li>Xbox</li><li>PlayStation</li><li>Nintendo Switch</li><li>iPhone</li><li>Samsung</li><li>Laptops</li><li>PC Gamer</li><li>Controles</li><li>Tabletas</li><li>Microsoldadura</li></ul>
+    <ul aria-hidden="true"><li>Xbox</li><li>PlayStation</li><li>Nintendo Switch</li><li>iPhone</li><li>Samsung</li><li>Laptops</li><li>PC Gamer</li><li>Controles</li><li>Tabletas</li><li>Microsoldadura</li></ul>
+  </div>
+</div></div>
+
+<!-- SECCIÓN: DATOS DE CONFIANZA (+6 años, garantía, etc.) -->
+<section class="stats" aria-label="Por qué elegir DuctiTech">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat"><span class="stat-num">+6</span><div><strong>Años de experiencia</strong><span>Reparando en Pachuca</span></div></div>
+      <div class="stat"><span class="ib"><svg class="icon"><use href="#i-shield-check"/></svg></span><div><strong>Garantía</strong><span>En todos los servicios</span></div></div>
+      <div class="stat"><span class="ib"><svg class="icon"><use href="#i-microchip"/></svg></span><div><strong>Microsoldadura</strong><span>Equipo de alta precisión</span></div></div>
+      <div class="stat"><span class="ib"><svg class="icon"><use href="#i-message-circle"/></svg></span><div><strong>Diagnóstico claro</strong><span>Costo antes de reparar</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: SERVICIOS
+     · Las tarjetas con fotos de equipos se editan en js/datos.js (DEVICES).
+     · Las tarjetas de especialidades (Consolas, Celulares, Cómputo,
+       Microsoldadura) se editan aquí mismo: cada <li> es un punto de la lista.
+     ==================================================================== -->
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Si tiene circuitos, lo revisamos.</h2>
+      <p>Diagnóstico preciso y repuestos de calidad para cada tipo de equipo. Elige una categoría o toca un equipo para cotizar por WhatsApp.</p>
+    </div>
+    <div class="devices-bar">
+      <div class="chips" role="tablist" aria-label="Filtrar equipos" id="deviceFilters">
+        <button class="chip" role="tab" aria-selected="true" data-f="all">Todos</button>
+        <button class="chip" role="tab" aria-selected="false" data-f="consolas"><svg class="icon"><use href="#i-gamepad-2"/></svg>Consolas</button>
+        <button class="chip" role="tab" aria-selected="false" data-f="computo"><svg class="icon"><use href="#i-laptop"/></svg>Cómputo</button>
+        <button class="chip" role="tab" aria-selected="false" data-f="moviles"><svg class="icon"><use href="#i-smartphone"/></svg>Móviles</button>
+        <button class="chip" role="tab" aria-selected="false" data-f="otros"><svg class="icon"><use href="#i-speaker"/></svg>Otros</button>
+      </div>
+    </div>
+    <div class="devices" id="devices"><!-- aquí aparecen las tarjetas de js/datos.js --></div>
+
+    <!-- Especialidades -->
+    <h3 class="spec-head">Lo que hacemos en cada equipo</h3>
+    <div class="bento">
+      <article class="spec">
+        <span class="ib"><svg class="icon"><use href="#i-gamepad-2"/></svg></span>
+        <h3>Consolas</h3>
+        <p>Xbox, PlayStation, Nintendo Switch, Nintendo DS y más.</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Reparación de puertos HDMI</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Cambio y reparación de HDD / SSD</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Mantenimiento preventivo y correctivo</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Limpieza profunda y pasta térmica</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Controles: drift, botones y gatillos</li>
+        </ul>
+      </article>
+      <article class="spec s-moviles">
+        <span class="ib"><svg class="icon"><use href="#i-smartphone"/></svg></span>
+        <h3>Celulares y tabletas</h3>
+        <p>iPhone, Samsung, Huawei, Xiaomi, iPad y más.</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Cambio de pantalla (LCD / OLED)</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Cambio de batería</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Reparación de puerto de carga</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Software: desbloqueo y virus</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Recuperación de datos</li>
+        </ul>
+      </article>
+      <article class="spec s-computo">
+        <span class="ib"><svg class="icon"><use href="#i-laptop"/></svg></span>
+        <h3>Cómputo</h3>
+        <p>Laptops y PC de escritorio: reparación y mejoras.</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Limpieza y pasta térmica</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Cambio de disco duro a SSD</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Reparación de fuente de poder</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Eliminación de virus y malware</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Sistemas operativos y pantallas</li>
+        </ul>
+      </article>
+      <!-- Tarjeta azul destacada -->
+      <article class="spec feature span4">
+        <span class="spec-badge">Nuestra especialidad</span>
+        <span class="ib"><svg class="icon"><use href="#i-microchip"/></svg></span>
+        <h3>Microsoldadura a nivel placa</h3>
+        <p>Cuando otros dicen "ya no tiene arreglo", nosotros revisamos el circuito. Reparamos componentes electrónicos con equipo de alta precisión.</p>
+        <ul class="checks">
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Conectores USB, HDMI y audio</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Reparación de pistas dañadas</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Cambio de chips y circuitos integrados</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Fallas de alimentación</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Recuperación de componentes</li>
+          <li><svg class="icon"><use href="#i-circle-check"/></svg>Consolas, celulares y laptops</li>
+        </ul>
+      </article>
+      <article class="spec cta-spec">
+        <div>
+          <span class="ib"><svg class="icon"><use href="#i-message-circle"/></svg></span>
+          <h3>¿No ves tu equipo?</h3>
+          <p style="margin-bottom:0">Audio, proyectores, monitores, fuentes de poder y más. Cuéntanos qué le pasa y te decimos si podemos repararlo.</p>
+        </div>
+        <a class="btn btn-wa" data-wa="Hola DuctiTech, ¿pueden revisar mi equipo? Es un: " href="https://wa.me/5217721646924" target="_blank" rel="noopener"><svg class="icon"><use href="#b-whatsapp"/></svg> Preguntar</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: PRECIOS
+     Los modelos, precios y fotos se cambian en js/datos.js (CATALOG).
+     Aquí solo están el título y la nota de abajo.
+     ==================================================================== -->
+<section class="section bg-white" id="precios">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Precios claros, sin sorpresas.</h2>
+      <p>Busca tu consola o elige una marca para ver el precio del mantenimiento, la garantía y qué incluye.</p>
+    </div>
+    <div class="catalog-shell">
+      <div class="catalog-bar">
+        <div class="chips" role="tablist" aria-label="Marca" id="brandTabs"><!-- se llena solo --></div>
+        <label class="search" id="searchBox">
+          <span class="sr-only">Buscar modelo</span>
+          <svg class="icon"><use href="#i-search"/></svg>
+          <input type="search" id="catalogSearch" placeholder="Busca tu modelo: PS5, Switch, Xbox One…" autocomplete="off">
+          <button type="button" class="search-clear" id="searchClear" aria-label="Limpiar búsqueda"><svg class="icon" style="width:16px;height:16px"><use href="#i-x"/></svg></button>
+        </label>
+      </div>
+      <div class="gallery" id="gallery" aria-label="Modelos que reparamos"></div>
+      <div class="price-grid" id="priceGrid" aria-live="polite"></div>
+    </div>
+    <p class="note"><svg class="icon"><use href="#i-info"/></svg><span>Precios de referencia en MXN para mantenimiento preventivo. Pueden variar según el diagnóstico y el modelo exacto del equipo. Te confirmamos el costo final antes de hacer cualquier trabajo.</span></p>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: PROCESO (los 4 pasos)
+     Los números amarillos se ponen solos en orden.
+     ==================================================================== -->
+<section class="section" id="proceso">
+  <div class="container">
+    <div class="sec-head">
+      <h2>De la recepción a la entrega, siempre informado.</h2>
+      <p>Cada paso aparece en el seguimiento en línea, así sabes en qué va tu equipo sin tener que llamar.</p>
+    </div>
+    <ol class="steps">
+      <li class="step"><span class="ib"><svg class="icon"><use href="#i-inbox"/></svg></span><h3>Recepción</h3><p>Registramos tu equipo y te damos un folio para rastrearlo.</p></li>
+      <li class="step"><span class="ib"><svg class="icon"><use href="#i-scan-search"/></svg></span><h3>Diagnóstico</h3><p>En 24–48 h revisamos la falla y te damos un presupuesto claro.</p></li>
+      <li class="step"><span class="ib"><svg class="icon"><use href="#i-wrench"/></svg></span><h3>Reparación</h3><p>Solo trabajamos con tu autorización. Si no tiene arreglo, te lo decimos.</p></li>
+      <li class="step"><span class="ib"><svg class="icon"><use href="#i-package-check"/></svg></span><h3>Entrega con garantía</h3><p>Te mostramos el equipo funcionando y te lo llevas con garantía.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: SEGUIMIENTO 
+     ==================================================================== -->
+<section class="section track" id="seguimiento">
+  <div class="container">
+    <div class="track-wrap">
+      <div class="track-intro">
+        <h2>¿Cómo va tu reparación?</h2>
+        <p>Escribe el folio de tu recibo y los últimos 4 dígitos de tu teléfono. Verás el estado, los pagos y las fotos del servicio.</p>
+        <div class="states">
+          <div class="state s-rec"><span class="ib"><svg class="icon"><use href="#i-inbox"/></svg></span><div><strong>Recibido</strong><span>Tu equipo ya está en el taller, en espera de diagnóstico.</span></div></div>
+          <div class="state s-dia"><span class="ib"><svg class="icon"><use href="#i-scan-search"/></svg></span><div><strong>En diagnóstico</strong><span>Revisamos la falla para darte un presupuesto claro.</span></div></div>
+          <div class="state s-rep"><span class="ib"><svg class="icon"><use href="#i-wrench"/></svg></span><div><strong>En reparación</strong><span>Ya autorizaste el servicio y estamos trabajando en tu equipo.</span></div></div>
+          <div class="state s-lis"><span class="ib"><svg class="icon"><use href="#i-circle-check"/></svg></span><div><strong>Listo para entrega</strong><span>Reparado y probado, esperando a que lo recojas.</span></div></div>
+        </div>
+      </div>
+
+      <div>
+        <form class="track-card" id="trackForm" novalidate>
+          <div class="track-card-title"><span class="ib"><svg class="icon"><use href="#i-scan-search"/></svg></span><div><strong>Consulta tu orden</strong><span>Toma menos de 10 segundos.</span></div></div>
+          <div class="field">
+            <label for="folio">Número de folio</label>
+            <input class="input" id="folio" name="folio" placeholder="TV-12345" autocomplete="off" autocapitalize="characters" spellcheck="false" required aria-describedby="folioHint">
+            <span class="hint" id="folioHint">Aparece en el recibo que te entregamos. Formato: PREFIJO-NÚMERO.</span>
+          </div>
+          <div class="field">
+            <label for="nip">NIP</label>
+            <div class="nip-wrap">
+              <input class="input" id="nip" name="nip" type="password" inputmode="numeric" maxlength="4" placeholder="••••" autocomplete="off" required aria-describedby="nipHint">
+              <button type="button" class="nip-toggle" id="nipToggle" aria-label="Mostrar NIP">Ver</button>
+            </div>
+            <span class="hint" id="nipHint">Son los últimos 4 dígitos del teléfono que registraste.</span>
+          </div>
+          <button class="btn btn-primary" type="submit" id="trackBtn"><svg class="icon"><use href="#i-search"/></svg> Consultar estado</button>
+          <div class="form-msg" id="formMsg" role="alert"></div>
+          <div class="track-help">
+            <span><svg class="icon" style="color:var(--ok)"><use href="#i-lock"/></svg> Ocultamos tus datos personales.</span>
+            <a data-wa="Hola DuctiTech, tengo una duda sobre mi reparación. Mi folio es: " href="https://wa.me/5217721646924" target="_blank" rel="noopener">¿Dudas? Escríbenos <svg class="icon"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </form>
+        <div class="result" id="result" aria-live="polite"><!-- aquí aparece el resultado de la consulta --></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: OPINIONES
+     Las reseñas se cambian en js/datos.js (REVIEWS).
+     ==================================================================== -->
+<section class="section" id="opiniones">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Lo que dicen nuestros clientes.</h2>
+      <div>
+        <p>Reseñas reales de clientes en Google Maps.</p>
+        <div class="rev-ctrl" style="margin-top:16px">
+          <button class="icon-btn" id="revPrev" aria-label="Opiniones anteriores"><svg class="icon"><use href="#i-chevron-left"/></svg></button>
+          <button class="icon-btn" id="revNext" aria-label="Más opiniones"><svg class="icon"><use href="#i-chevron-right"/></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="reviews" id="reviews" tabindex="0" aria-label="Opiniones de clientes"><!-- se llena solo --></div>
+    <a class="btn btn-sm google-link" href="https://maps.app.goo.gl/ZeSnL3kf8nuBJ69V6" target="_blank" rel="noopener"><svg class="icon"><use href="#b-google"/></svg> Ver todas las reseñas en Google</a>
+  </div>
+</section>
+
+<!-- SECCIÓN: NOSOTROS (texto, valores, misión y visión) -->
+<section class="section bg-white" id="nosotros">
+  <div class="container about-grid">
+    <div>
+      <h2>Más que un taller, tu aliado tecnológico.</h2>
+      <p class="about-lead">Llevamos más de 6 años en el centro de Pachuca dando una segunda vida a consolas, computadoras y celulares. Trabajamos con honestidad: te explicamos cada paso y el costo antes de empezar.</p>
+      <p class="quote-block">¿Tu consola, celular o computadora está fallando? No dejes que un problema técnico detenga tu día a día.</p>
+      <div class="values">
+        <div class="value"><svg class="icon"><use href="#i-user-check"/></svg><div><strong>Atención personalizada</strong><span>Te explicamos cada paso y los costos.</span></div></div>
+        <div class="value"><svg class="icon"><use href="#i-hand-heart"/></svg><div><strong>Honestidad</strong><span>Si no tiene arreglo, te lo decimos sin compromiso.</span></div></div>
+        <div class="value"><svg class="icon"><use href="#i-zap"/></svg><div><strong>Respuesta rápida</strong><span>Diagnóstico en 24–48 horas.</span></div></div>
+        <div class="value"><svg class="icon"><use href="#i-award"/></svg><div><strong>+6 años de trayectoria</strong><span>Todo tipo de dispositivos.</span></div></div>
+      </div>
+    </div>
+    <div class="mv">
+      <article class="mv-card"><span class="ib"><svg class="icon"><use href="#i-target"/></svg></span><div><h3>Misión</h3><p>Ofrecer a cada cliente un servicio honesto, eficiente y de alta calidad. Buscamos darle una experiencia única y confiable, con soluciones rápidas que generen confianza y fidelidad.</p></div></article>
+      <article class="mv-card"><span class="ib"><svg class="icon"><use href="#i-rocket"/></svg></span><div><h3>Visión</h3><p>Ser la empresa líder en reparación de aparatos electrónicos y soluciones tecnológicas, reconocida por nuestra innovación, calidad y experiencia en microsoldadura, y un referente de confianza para nuestros clientes.</p></div></article>
+      <article class="mv-card accent"><span class="ib"><svg class="icon"><use href="#i-sparkles"/></svg></span><div><h3>Dale una segunda vida a tu equipo</h3><p style="margin-bottom:18px">Reparar cuesta menos que comprar nuevo y evita basura electrónica.</p><a class="btn btn-volt btn-sm" href="#precios">Ver precios</a></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: PREGUNTAS FRECUENTES
+     Cada pregunta es un renglón <details>. Para agregar otra, copia uno
+     completo y cambia la pregunta (en <summary>) y la respuesta (en class="ans").
+     ==================================================================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="sec-head center"><h2>Preguntas frecuentes</h2></div>
+    <div class="faq">
+      <details><summary>¿Cuánto tarda el diagnóstico?<svg class="icon"><use href="#i-chevron-down"/></svg></summary><div class="ans">Normalmente entre 24 y 48 horas. En cuanto lo tengamos te avisamos con la falla y el presupuesto, y también lo verás en el seguimiento en línea.</div></details>
+      <details><summary>¿Las reparaciones tienen garantía?<svg class="icon"><use href="#i-chevron-down"/></svg></summary><div class="ans">Sí, todos nuestros servicios tienen garantía. Los mantenimientos de consola tienen 3 meses. Si aparece una falla relacionada con la reparación, la revisamos sin costo adicional.</div></details>
+      <details><summary>¿Los precios del catálogo son finales?<svg class="icon"><use href="#i-chevron-down"/></svg></summary><div class="ans">Son precios de referencia para mantenimiento preventivo. El costo final depende del diagnóstico y del modelo exacto. Siempre te lo confirmamos antes de empezar y no hacemos nada sin tu autorización.</div></details>
+      <details><summary>¿Dónde encuentro mi folio y mi NIP?<svg class="icon"><use href="#i-chevron-down"/></svg></summary><div class="ans">El folio viene en el recibo que te entregamos al dejar tu equipo (por ejemplo, TV-12345). El NIP son los últimos 4 dígitos del teléfono que registraste.</div></details>
+      <details><summary>¿Qué pasa si mi equipo no tiene reparación?<svg class="icon"><use href="#i-chevron-down"/></svg></summary><div class="ans">Te lo decimos con honestidad y sin compromiso, y te explicamos por qué para que decidas qué hacer.</div></details>
+      <details><summary>¿Qué formas de pago aceptan?<svg class="icon"><use href="#i-chevron-down"/></svg></summary><div class="ans">Efectivo, tarjeta y transferencia. Puedes ver tus pagos y el saldo pendiente en el seguimiento en línea.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================================
+     SECCIÓN: CONTACTO (datos y mapa)
+     en caso de requerir caminar aquí y en js/datos.js (WA_NUMBER).
+     ==================================================================== -->
+<section class="section bg-white" id="contacto">
+  <div class="container contact-grid">
+    <div class="contact-card">
+      <h2>Visítanos o escríbenos.</h2>
+      <p>Cotiza por WhatsApp o lleva tu equipo a revisión. Te atendemos en el centro de Pachuca.</p>
+      <div class="contact-list">
+        <a data-wa="Hola DuctiTech, quiero cotizar una reparación." href="https://wa.me/5217721646924" target="_blank" rel="noopener"><span class="ib wa"><svg class="icon"><use href="#b-whatsapp"/></svg></span><div><small>WhatsApp, respuesta rápida</small><strong>772 164 6924</strong></div></a>
+        <a href="tel:+527721646924"><span class="ib"><svg class="icon"><use href="#i-phone"/></svg></span><div><small>Teléfono</small><strong>772 164 6924</strong></div></a>
+        <a href="mailto:contactodroidusty@gmail.com"><span class="ib"><svg class="icon"><use href="#i-mail"/></svg></span><div><small>Correo</small><strong>contactodroidusty@gmail.com</strong></div></a>
+        <a href="https://maps.app.goo.gl/ZeSnL3kf8nuBJ69V6" target="_blank" rel="noopener"><span class="ib"><svg class="icon"><use href="#i-map-pin"/></svg></span><div><small>Dirección</small><strong>Jardín Colón No. 8, Col. Centro, Pachuca de Soto, Hgo.</strong></div></a>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/DuctiTech/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="#b-facebook"/></svg></a>
+        <a href="https://www.instagram.com/ducti_tech" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#b-instagram"/></svg></a>
+        <a href="https://www.tiktok.com/@ducti.tech" target="_blank" rel="noopener" aria-label="TikTok"><svg class="icon"><use href="#b-tiktok"/></svg></a>
+        <a href="https://maps.app.goo.gl/ZeSnL3kf8nuBJ69V6" target="_blank" rel="noopener" aria-label="Google Maps"><svg class="icon"><use href="#b-google"/></svg></a>
+      </div>
+    </div>
+    <div class="map">
+      <iframe title="Ubicación de DuctiTech en Pachuca" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-src="https://www.google.com/maps?q=Jard%C3%ADn+Col%C3%B3n+8,+Centro,+42000+Pachuca+de+Soto,+Hgo.&z=17&output=embed"></iframe>
+      <a class="btn btn-primary btn-sm map-btn" href="https://maps.app.goo.gl/ZeSnL3kf8nuBJ69V6" target="_blank" rel="noopener"><svg class="icon"><use href="#i-navigation"/></svg> Cómo llegar</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN: FRANJA FINAL -->
+<section class="final-cta" aria-label="Cotiza tu reparación">
+  <div class="container">
+    <h2>¿Tu equipo falla? Cuéntanos qué le pasa.</h2>
+    <div class="btns">
+      <a class="btn btn-wa" data-wa="Hola DuctiTech, quiero cotizar una reparación." href="https://wa.me/5217721646924" target="_blank" rel="noopener"><svg class="icon"><use href="#b-whatsapp"/></svg> Cotizar por WhatsApp</a>
+      <a class="btn" href="tel:+527721646924"><svg class="icon"><use href="#i-phone"/></svg> Llamar</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- SECCIÓN: PIE DE PÁGINA -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#inicio" class="brand"><img src="img/logo.webp" alt="" width="44" height="44" loading="lazy"><span class="brand-name"><b>DUCTI<span>TECH</span></b><small>Tecnología adaptable</small></span></a>
+        <p>Reparación de consolas, cómputo, celulares y microsoldadura. Más de 6 años en Pachuca de Soto, Hidalgo.</p>
+      </div>
+      <div>
+        <h4>Sitio</h4>
+        <ul><li><a href="#servicios">Servicios</a></li><li><a href="#precios">Precios</a></li><li><a href="#seguimiento">Seguimiento</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ul>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <ul><li><a href="https://www.facebook.com/DuctiTech/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/ducti_tech" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.tiktok.com/@ducti.tech" target="_blank" rel="noopener">TikTok</a></li><li><a href="https://maps.app.goo.gl/ZeSnL3kf8nuBJ69V6" target="_blank" rel="noopener">Google Maps</a></li></ul>
+      </div>
+    </div>
+    <!-- Actualizacion autmatica dek año -->
+    <div class="copy"><span>© <span id="year">2026</span> DuctiTech. Todos los derechos reservados.</span><span>Jardín Colón No. 8, Col. Centro, Pachuca de Soto, Hgo.</span></div>
+  </div>
+</footer>
+
+<!-- Botón verde flotante de WhatsApp -->
+<a class="wa-float" data-wa="Hola DuctiTech, quiero cotizar una reparación." href="https://wa.me/5217721646924" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg class="icon"><use href="#b-whatsapp"/></svg></a>
+<div class="mobile-bar">
+  <a class="btn btn-wa" data-wa="Hola DuctiTech, quiero cotizar una reparación." href="https://wa.me/5217721646924" target="_blank" rel="noopener"><svg class="icon"><use href="#b-whatsapp"/></svg> WhatsApp</a>
+  <a class="btn btn-primary" href="#seguimiento"><svg class="icon"><use href="#i-scan-search"/></svg> Rastrear</a>
+</div>
+
+<!-- Ventana para ver fotos en grande -->
+<dialog class="lightbox" id="lightbox" aria-label="Imagen ampliada">
+  <button class="icon-btn" id="lbClose" aria-label="Cerrar imagen"><svg class="icon"><use href="#i-x"/></svg></button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<!-- Funciones de la página -->
+<script src="js/datos.js"></script>   
+<script src="js/app.js"></script>     
+</body>
+</html>
